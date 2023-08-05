@@ -1,0 +1,81 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffff;
+    /* box-shadow:  rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    height: 50px;
+    border-radius: 1em;
+    padding: 5px;
+    margin: 0;
+    width: 100%;
+
+}
+
+.logo{
+    margin: 15px;
+    color: rgb(50, 50, 179);
+    font-size: 1.5rem;
+}
+
+.Data-nav, .main-nav {
+    list-style: none;
+    margin: 35px;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(50, 50, 179);
+}
+
+.main-nav{
+    display: flex;
+    
+
+}
+
+.nav-list{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.register{
+    display: flex;
+    margin: 10px;
+}
+
+.signup {
+    border: 2px solid rgb(50, 50, 179);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 5px 15px 15px 15px;
+    font-size: 0.8rem;
+    color: rgb(50, 50, 179);
+    height:5px;
+    width: 45px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.login {
+    border: 2px solid rgb(50, 50, 179);
+    background: rgb(50, 50, 179);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 5px 15px 15px 15px;
+    font-size: 0.8rem;
+    color: rgb(247, 247, 250);
+    height:5px;
+    width: 45px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: absolute;
+    top: 12%;
+    width: 200px;
+    
+    z-index: 15;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    /* box-shadow: 0 16px 24px 2px rgba(0,0,0, 0.14); */
+}
+

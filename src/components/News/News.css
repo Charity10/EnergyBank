@@ -1,0 +1,18 @@
+.news_text{
+    color: rgb(50, 50, 179);
+    
+}
+
+.new-section{
+    /* border: 1px solid rgb(50, 50, 179); */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    
+}
+
+.news-1 {
+    /* border: 1px solid blue; */
+    
+}
