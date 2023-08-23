@@ -1,46 +1,44 @@
-.navigation {
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #ffff;
-    /* box-shadow:  rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
-    height: 50px;
-    border-radius: 1em;
+    background: #fff;
+    box-shadow:  rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
+    height: 70px;
     padding: 5px;
     margin: 0;
-    width: 100%;
+    width: 100%; 
+    position: fixed; 
+    z-index: 888; 
 
 }
 
 .logo{
-    margin: 15px;
+    margin: 5px;
     color: rgb(50, 50, 179);
     font-size: 1.5rem;
 }
 
-.Data-nav, .main-nav {
-    list-style: none;
-    margin: 35px;
-    justify-content: space-between;
-    align-items: center;
-    color: rgb(50, 50, 179);
-}
-
-.main-nav{
+.nav-links {
     display: flex;
+    color: black;
+    
     
 
 }
 
-.nav-list{
-    margin-left: 20px;
-    cursor: pointer;
+.about-link {
+    margin: 20px;
+}
+.training-link {
+    margin: 20px;
 }
 
-.register{
-    display: flex;
-    margin: 10px;
+.data-link{
+    margin: 20px;
+   
 }
+
 
 .signup {
     border: 2px solid rgb(50, 50, 179);
@@ -50,7 +48,6 @@
     font-size: 0.8rem;
     color: rgb(50, 50, 179);
     height:5px;
-    width: 45px;
     text-align: center;
     cursor: pointer;
 }
@@ -64,18 +61,8 @@
     font-size: 0.8rem;
     color: rgb(247, 247, 250);
     height:5px;
-    width: 45px;
     text-align: center;
     cursor: pointer;
 }
 
-.dropdown {
-    position: absolute;
-    top: 12%;
-    width: 200px;
-    
-    z-index: 15;
-    border: 1px solid rgba(0, 0, 0, 0.04);
-    /* box-shadow: 0 16px 24px 2px rgba(0,0,0, 0.14); */
-}
 

@@ -10,7 +10,9 @@
 .data-section {
     box-shadow: rgba(30, 30, 30, 0.2) 0px 18px 50px -10px;
     border-radius: 2px;
-    border: 2px solid rgb(138, 136, 136);
+    /* border: 2px solid rgb(138, 136, 136); */
     height: 2em;
+    text-align: center;
     margin-top: 20px;
+    cursor: pointer;
 }

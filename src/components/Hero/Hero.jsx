@@ -1,42 +1,34 @@
 import './Hero.css';
 import { ImageData } from '../imageSlider';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 
 
-export const Hero = ({slides}) => {
-      const [current, setCurrent ] = useState(0);
-      const length = slides.length;
 
-      const nextSlide = () => {
-        setCurrent(current === length -1? 0 : current + 1);
-      };
 
-      const prevSlide = () => {
-        setCurrent(current === 0 ? length -1 : current - 1);
-      };
+export const Hero = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
 
-    if (!Array.isArray(slides) || slides.length <= 0) {
-        return null;
+  useEffect(() => {
+    const slideInterval = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % ImageData.length);
+    }, 5000);
+    return () => {
+      clearInterval(slideInterval);
     }
+  }, [])
     return (
-        <section className='slider'>
-             <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
-              <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
+        <div className='slider'>
 
-              {ImageData.map((slide, index) => {
-                return(
-                     <div
-                className={index === current ? 'slide active' : 'slide'}
-                key={index}
-                >
-                    {index === current && (
-                        <img src={slide.image} alt='Image of energy sector' className='image' />
-                    )}
-                    </div>
-                );
-              })}
-              </section>
+          <img src={ImageData[currentSlide].image} alt={ImageData[currentSlide].title} className='Heroimage' />
+          <div className="heroContents">
+            <h1 className='herotext'>{ImageData[currentSlide].title}</h1>
+            <p className='subtext'>{ImageData[currentSlide].subTitle}</p>
+            <p className='aboutUs'>About Us</p>
+          </div>
+
+              </div>
     );
 }

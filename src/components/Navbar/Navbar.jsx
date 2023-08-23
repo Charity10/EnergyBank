@@ -1,49 +1,46 @@
 import { Component } from 'react'
 import './Navbar.css'
+import { Outlet, Link } from 'react-router-dom';
+import { Fragment } from 'react';
+
 
 class Navbar extends Component {
-    state = {
-        open: false,
-      };
-      handleButtonClick = () => {
-        this.setState((state) => {
-            return {
-                open: !state.open,
-            };
-        })
-      }
+  
       render() {
         return(
-                <div className='navigation'>
+                <Fragment>
+                <div className='nav'>
+                   < Link className='home-link' to='/'>
+                      <h1 className='logo'> Energy Data Bank for Nigeria</h1> 
+                    </Link>
+
+
+                   <div className="nav-links">
+                       
+                         <Link className='about-link' to='About'>
+                            About us
+                        </Link>
+                           <Link className='training-link' to='training'>
+                                Training
+                           </Link>
+                          
+                       <Link className='data-link' to='data'>
+                           Data
+                        </Link>
+
+                       
                     
-                   <div className="right-col">
-                      <h1 className='logo'> Energy Data  <br/> Bank for Nigeria</h1> 
-                    </div>
 
-                   <div className="nav-items">
-                       <ul className='main-nav'>
-                           <li className='nav-list'> Home</li>
-                           <li className='nav-list'>About us</li>
-                           <li className='nav-list'>Training</li>
-                           <li onClick={this.handleButtonClick} className='nav-list'>Data</li>
-                         { this.state.open && ( 
+                        <Link className='signup' to='signUp'>Sign up</Link>
+                       <Link className='login' to='logIn'>Login</Link>
 
-                         <div className="dropdown">
-                               <ul className='Data-nav'>
-                                   <li>Electricity</li>
-                                   <li>Petroleum</li>
-                                   <li>Gas</li>
-                               </ul>
-                           </div>
-                           )}
-                       </ul>
+                  
+                       
                    </div>
-                   
-                   <div className='register'>
-                       <p className='signup'>Sign up</p>
-                       <p className='login'>Login</p>
                    </div>
-                </div>   
+                   <Outlet />
+         
+                </Fragment>   
            )
       }
 }

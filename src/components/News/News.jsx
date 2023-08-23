@@ -1,46 +1,41 @@
-import './News.css'
+import React, { useState, useEffect } from 'react';
+import './News.css';
 import axios from 'axios';
 
-import {useEffect, useState } from 'react';
+const NewsFeed = () => {
+  const [news, setNews] = useState([]);
 
+  useEffect(() => {
+    const apiKey = '49ca8351639e40a6a71e468e8db841bf';
+    const apiUrl = `https://newsapi.org/v2/everything?q=energy&apiKey=${apiKey}`;
 
-const endpoint = 'https://jsonplaceholder.typicode.com/users'
+    axios.get(apiUrl)
+      .then(response => {
+        setNews(response.data.articles);
+      })
+      .catch(error => {
+        console.error('Error fetching news:', error);
+      });
+  }, []);
 
-const News = () => {
-    const [News, setNews] = useState([]);
+  return (
+    <div className='newsContainer'>
+      <h1>Today in Energy</h1>
+          <ul className='newsList'>
+        {news.map((article, index) => (
+          <li className='listItems' key={index}>
+            <h2 className='news-title'>{article.title}</h2>
+            <p className='news-description'>{article.description}</p>
+            <a className='news-url' href={article.url} target="_blank" rel="noopener noreferrer">
+              Read more
+            </a>
+          </li>
+        ))}
+      </ul>
+      </div>
+    
+    
+  );
+};
 
-    useEffect(() => {
-        (async () => {
-            const data = await fetch(endpoint)
-               .then(res => res.json())
-
-               setNews(data)
-        })()
-    }, [])
-    console.log(News.name)
-
-    // useEffect(() => {
-    //     fetch()
-    //     .then((response) => response.json())
-    //     .then((users) => setNews(users));
-    // }, []);
-
-        return(
-             <div className='new-section'>
-                <div className='news-1'>
-                    <h3>What's New</h3>
-                </div>
-                 <div className='news-2'>
-                    <h3>Today in Energy</h3>
-                 </div>
-                 <div className='news-3'>
-                    <h3>Coming Up</h3>
-                 </div>
-             </div>
-
-        )
-    }
-
-
-
-export default News;
+export default NewsFeed;

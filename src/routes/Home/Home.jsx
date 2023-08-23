@@ -1,20 +1,17 @@
-import { useState } from 'react';
-import Navbar from '../../components/Navbar/Navbar';
 import { Hero } from '../../components/Hero/Hero';
-import News from '../../components/News/News';
-import Contact from '../../components/contact/contact';
+import NewsFeed from '../../components/News/News';
+// import Contact from '../../components/contact/contact';
 import { ImageData } from '../../components/imageSlider';
+import { Fragment } from 'react';
 
 
 function Home() {
   
   return (
-    <>
-      <Navbar />
+    <Fragment>
       <Hero slides={ImageData} />
-      <News />
-      {/* <Contact /> */}
-    </>
+      <NewsFeed />
+    </Fragment>
   )
 }
 
