@@ -1,0 +1,9 @@
+.contact-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #0e0494;
+    color: #f0f8ff;
+    height: calc(100vh - 70px);
+}
+

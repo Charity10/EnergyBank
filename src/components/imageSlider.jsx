@@ -3,7 +3,7 @@ export const ImageData =[
         image:
         'https://rinconeducativo.org/wp-content/uploads/2018/10/petroleum.jpg',
         title: 
-        'Energy for Today Energy for tomorrow'
+        'EDBN'
     },
    
     {

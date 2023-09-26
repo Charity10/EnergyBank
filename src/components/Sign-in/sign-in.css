@@ -1,0 +1,83 @@
+.container {
+  display: flex;
+  width: auto;
+  height: 100vh;
+  flex-direction: column;
+  background: #181894;
+  padding: 100px;
+  color: #fff;
+  gap: 15px;
+  height: 100%;
+}
+
+.header{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 5px;
+}
+.underline{
+  background: #fff;
+  border: 3px solid;
+  width: 20%;
+  border-radius: 2px;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.input {
+  background: transparent;
+  border: none;
+  padding: 10px;
+}
+.user-input{
+  padding: 15px;
+}
+
+.submit-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.otheropt-container {
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sign-btn{
+  background: white;
+  color: #181894;
+  border-radius: 5px;
+  width: 20%;
+  height: 35px;
+  text-align: center;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.checkaccount{
+  color: black;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.checkaccount span {
+  color: #fff;
+  cursor: pointer;
+}
+
+.google-signin{
+  border: 1.45px #fafafa solid;
+  background: white;
+  border-radius: 5px;
+  color: rgb(48, 13, 226);
+  width: 20%;
+  text-align: center;
+  font-weight: bold;
+  padding: 3px;
+}

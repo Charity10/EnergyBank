@@ -1,0 +1,42 @@
+
+.data-section {
+    display: flex;
+    padding: 80px;
+    margin: 0 auto;
+    gap: 20px;
+    height: 120vh
+}
+
+.data-nav{
+    background: #020c7e;
+    width: 25%;
+    color: white;
+   
+}
+.info{
+    border: 0.5px solid rgb(175, 175, 207) ;
+    width: 80%;
+    padding: 20px;
+    height: 100vh;
+}
+.content{
+    text-align: center;
+}
+.energy-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.energy-list li {
+    margin: 20px 0;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+.energy-list li:hover {
+    background: white;
+    color: #020c7e;
+    font-size: 1.2rem;
+}

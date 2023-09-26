@@ -1,10 +1,7 @@
 import './Hero.css';
 import { ImageData } from '../imageSlider';
 import { useEffect, useState } from 'react';
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-
-
 
 
 
@@ -26,9 +23,38 @@ export const Hero = () => {
           <div className="heroContents">
             <h1 className='herotext'>{ImageData[currentSlide].title}</h1>
             <p className='subtext'>{ImageData[currentSlide].subTitle}</p>
-            <p className='aboutUs'>About Us</p>
+            <Link className='aboutUs' to='/about'>
+              About Us
+            </Link>
           </div>
 
               </div>
     );
 }
+
+/**
+ * run
+goose
+danger
+attitude
+act
+peanut
+about
+tool
+hip
+comfort
+lend
+series
+ability
+lawn
+trumpet
+humble
+sail
+steak
+change
+local
+question
+second
+aware
+rural
+ */

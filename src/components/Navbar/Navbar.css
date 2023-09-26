@@ -5,13 +5,11 @@
     background: #fff;
     box-shadow:  rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
     height: 70px;
-    padding: 5px;
-    margin: 0;
+    /* padding: 5px; */
     width: 100%; 
     position: fixed; 
     z-index: 888; 
-
-}
+    }
 
 .logo{
     margin: 5px;
@@ -44,25 +42,36 @@
     border: 2px solid rgb(50, 50, 179);
     border-radius: 10px;
     margin: 20px;
-    padding: 5px 15px 15px 15px;
+    padding: 10px;
+    font-weight: bold;
     font-size: 0.8rem;
     color: rgb(50, 50, 179);
     height:5px;
     text-align: center;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
 
 .login {
     border: 2px solid rgb(50, 50, 179);
     background: rgb(50, 50, 179);
     border-radius: 10px;
     margin: 20px;
-    padding: 5px 15px 15px 15px;
+    padding: 10px;
+    font-weight: bold;
     font-size: 0.8rem;
     color: rgb(247, 247, 250);
     height:5px;
-    text-align: center;
+    text-align: start;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 

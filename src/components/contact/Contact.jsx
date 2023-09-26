@@ -1,85 +1,37 @@
-import React, { Component } from 'react';
+import { Fragment } from 'react';
 
-class Contact extends Component {
-  constructor(props) {
-    super(props);
+import './Contact.css';
 
-    this.state = {
-      name: '',
-      email: '',
-      message: '',
-      submitted: false,
-    };
-  }
 
-  handleChange = (e) => {
-    const { name, value } = e.target;
-    this.setState({ [name]: value });
-  };
+export const Contact = () => {
 
-  handleSubmit = (e) => {
-    e.preventDefault();
-    // Here you can add your logic to handle the form submission,
-    // e.g., sending the data to a server or displaying a success message.
-    console.log('Form data submitted:', this.state);
-
-    // Reset the form after submission
-    this.setState({
-      name: '',
-      email: '',
-      message: '',
-      submitted: true,
-    });
-  };
-
-  render() {
-    const { name, email, message, submitted } = this.state;
-
-    return (
-      <section id="contact">
-        <h2>Contact Us</h2>
-        {submitted ? (
-          <p>Thank you for contacting us!</p>
-        ) : (
-          <form onSubmit={this.handleSubmit}>
-            <div className="form-group">
-              <label htmlFor="name">Name:</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={name}
-                onChange={this.handleChange}
-                required
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="email">Email:</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={email}
-                onChange={this.handleChange}
-                required
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="message">Message:</label>
-              <textarea
-                id="message"
-                name="message"
-                value={message}
-                onChange={this.handleChange}
-                required
-              />
-            </div>
-            <button type="submit">Submit</button>
-          </form>
-        )}
-      </section>
-    );
-  }
+  return  ( 
+  <Fragment>
+  <div className="contact-section">
+        <div className="edbn">
+          <h3 className='contact-title'> EDBN</h3>
+          <p> About us</p>
+          <p>Investors</p>
+          <p>Contact us</p>
+          <p>Privacy policy</p>
+        </div>
+        <div className="sevices">
+           <h3 className='contact-title'>Our services</h3>
+           <p>Electricity</p>
+           <p>Petroleum</p>
+           <p>Gas</p>
+        </div>
+        
+        <div className="social Media">
+          <h3 className='contact-title'> Social media </h3>
+             <p>Instagram</p>
+             <p>Twitter</p>
+             <p>Facebook</p>
+             <p>Linkedin</p>
+             <p>Youtube</p>
+        </div>
+        </div>
+        
+       </Fragment>
+       )
 }
-
-export default Contact;
