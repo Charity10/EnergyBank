@@ -1,68 +1,44 @@
 export const ImageData =[
-    {
-        image:
-        'https://rinconeducativo.org/wp-content/uploads/2018/10/petroleum.jpg',
-        title: 
-        'Energy for Today Energy for tomorrow'
-    },
    
     {
-        image:
-        'https://www.carolinacountry.com/images/2018/01-January/More-Power/Transmission-Lines-Power-Grid.jpg',
+        images: 
+        'https://images.unsplash.com/photo-1413882353314-73389f63b6fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGVuZXJneXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60',
         title:
         'Comprehensive Data Statistic',
         subTitle: 
            'Energy data bank serving as repository of information and statistics of energy production, consumption, reserves, and other relevant factors.'
     },
     {
-        image:
-        'https://www.hcn.org/issues/45.9/haywired/grid2-jpg/image',
+        images:
+        'https://images.unsplash.com/photo-1548613053-22087dd8edb8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGVuZXJneXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60',
         title:
         'Information on Energy Production',
         subTitle:
-        'providing insights into the quantity and sources of energy produced within Nigeria.'
+        'Providing insights into the quantity and sources of energy produced within Nigeria.'
     },
     {
-        image:
-        'https://cdn.punchng.com/wp-content/uploads/2018/05/11112558/solar-power-energy-for-green-businesses-e1526034367183.jpg',
+        images: 
+        'https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZW5lcmd5fGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60',
         title: 
         'Information on Energy Consumption',
         subTitle:
-        'showing consumption patterns of different sectors.'
+        'Showing consumption patterns of different sectors.'
     },
     {
-        image:
-        'https://www.realmobiweb.com/blog/wp-content/uploads/2022/02/Gas-Station-Names-Best-Gas-and-Petrol-Station-Name-Ideas.jpg',
-        title:
+        images:
+        'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZW5lcmd5fGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60',
+       title:
         'Information on Energy Reserves',
         subTitle:
         'This is with the intent to present data for long-term planning and policy formulation.'
     },
     {
-        image:
-        'https://1.bp.blogspot.com/-_cw5mPFrxmc/XtuawSHRV0I/AAAAAAAAEWQ/52ff8l3-MKI0_ZdlJpwwyrH6tgh9diaOQCLcBGAsYHQ/s1600/uses-of-electricity-in-our-daily-life.jpg',
+        images:
+        'https://media.istockphoto.com/id/1443576938/photo/team-of-engineers-working-on-a-night-shift.webp?b=1&s=170667a&w=0&k=20&c=tVqLaJ7RrUq9Vg7StCWkZUCRtXI6fNE5ZpNl3-vvQmU=',
         title:
-        'Information on Energy Imports and Exports',
+        'Energy Imports and Exports',
         subTitle:
         "Volume and value of energy imports and exports will be presented to assess Nigeria’s dependence on external sources"
     },
-    
-    {
-        image:
-        'https://assets.sunnewsonline.com/2022/08/blue-solar-panels-1226088001-cee91a7ba920447280aed1d081b44859.jpg',
-        title:
-        'Information on Energy Prices',
-        subTitle:
-        'Historical price data for various fuels or electricity tariffs are tracked'
-    },
-    {
-        image:
-        'https://etimg.etb2bimg.com/photo/91895309.cms',
-        title:
-        'Environmental Impact',
-        subTitle:
-        'Information on greenhouse gas emissions, energy-related pollution'
-    },
-
 
 ]

@@ -1,15 +1,28 @@
-.nav {
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.navbar{
+    background: aliceblue;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #fff;
-    box-shadow:  rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
-    height: 70px;
-    padding: 5px;
-    margin: 0;
-    width: 100%; 
-    position: fixed; 
-    z-index: 888; 
+    gap: 40px;
+    width: 100%;
+    min-height: 70px;
+    z-index: 888;
+    position: fixed;
+}
+
+.home-link{
+    background-color: aliceblue;
+    padding: 10px 20px;
+    /* display: flex; */
 
 }
 
@@ -19,50 +32,112 @@
     font-size: 1.5rem;
 }
 
-.nav-links {
+.navMenu {
     display: flex;
-    color: black;
+    font-weight: bold;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    align-items: center;
+}
+
+.navlink {
+    color: #000;
+}
+
+@media screen and (max-width: 1279px)  {
+    .navbar {
+        align-items: center;
+        background: #fff;
+        padding: 10px;
+        width: 100%; 
+        position: fixed; 
+        z-index: 888; 
     
+    }
     
-
+    .logo{
+        margin: 5px;
+        color: rgb(50, 50, 179);
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    
+    .navlink {
+        display: flex;
+        color: black;
+        font-size: 2rem;
+        
+        
+    
+    }
+    
+    .about-link {
+        margin: 20px;
+    }
+    .training-link {
+        margin: 20px;
+    }
+    
+    .data-link{
+        margin: 20px;
+       
+    }
 }
 
-.about-link {
-    margin: 20px;
+@media screen and (max-width: 780px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .bar{
+        background-color: #120f0b;
+        width: 20px;
+        height: 3px;
+        display: block;
+        margin: 5px;
+        -webkit-transistion: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+  
+    
+    .logo{
+        margin: 5px;
+        color: rgb(50, 50, 179);
+        font-size: 1.5rem;
+    }
+    
+    .navMenu {
+        display: flex;
+        color: black;
+        font-size: 0.9rem;
+        position: absolute;
+        flex-direction: column;
+        gap: 0;
+        top: 70px;
+        left: -100%;
+        text-align: start;
+        width: 100%;
+        transition: 0.7s ease-in-out;
+        background-color: aliceblue;
+        padding: 10px;
+    
+    }
+
+    .navMenu.active{
+        left: 0;
+    }
+    .navlink{
+        margin: 16px 0;
+    }
 }
-.training-link {
-    margin: 20px;
-}
-
-.data-link{
-    margin: 20px;
-   
-}
-
-
-.signup {
-    border: 2px solid rgb(50, 50, 179);
-    border-radius: 10px;
-    margin: 20px;
-    padding: 5px 15px 15px 15px;
-    font-size: 0.8rem;
-    color: rgb(50, 50, 179);
-    height:5px;
-    text-align: center;
-    cursor: pointer;
-}
-
-.login {
-    border: 2px solid rgb(50, 50, 179);
-    background: rgb(50, 50, 179);
-    border-radius: 10px;
-    margin: 20px;
-    padding: 5px 15px 15px 15px;
-    font-size: 0.8rem;
-    color: rgb(247, 247, 250);
-    height:5px;
-    text-align: center;
-    cursor: pointer;
-}
-
-

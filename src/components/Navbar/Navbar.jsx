@@ -1,49 +1,57 @@
-import { Component } from 'react'
+import { useState } from 'react';
 import './Navbar.css'
 import { Outlet, Link } from 'react-router-dom';
-import { Fragment } from 'react';
 
 
-class Navbar extends Component {
+function Navbar() {
+
+   const [isActive, setIsActive] = useState('false');
+
+   const toggleActiveClass = () => {
+      setIsActive(!isActive);
+   };
+
+   const removeActive = () => {
+      setIsActive(false)
+   }
   
-      render() {
         return(
-                <Fragment>
-                <div className='nav'>
+            <>
+                <nav className='navbar'>
                    < Link className='home-link' to='/'>
-                      <h1 className='logo'> Energy Data Bank for Nigeria</h1> 
+                      <h1 className='logo'> E~D~B~N</h1> 
                     </Link>
 
 
-                   <div className="nav-links">
+                   <div className= {isActive ? 'navMenu active' : 'navMenu'}>
                        
-                         <Link className='about-link' to='About'>
+                         <Link className='navlink' to='About' onClick={removeActive} >
                             About us
                         </Link>
-                           <Link className='training-link' to='training'>
+                           <Link className='navlink' to='training' onClick={removeActive} >
                                 Training
                            </Link>
                           
-                       <Link className='data-link' to='data'>
+                       <Link className='navlink' to='data' onClick={removeActive} >
                            Data
-                        </Link>
-
-                       
-                    
-
-                        <Link className='signup' to='signUp'>Sign up</Link>
-                       <Link className='login' to='logIn'>Login</Link>
-
-                  
-                       
+                        </Link> 
                    </div>
-                   </div>
+                   <div className={isActive ? 'hamburger active' : ' hamburger'} onClick={toggleActiveClass}>
+                           <span className="bar"></span>
+                           <span className="bar"></span>
+                           <span className="bar"></span>
+                        </div>
+                   </nav>
+
+
+
+
                    <Outlet />
          
-                </Fragment>   
+                </>   
            )
       }
-}
+
 
 
 export default Navbar;

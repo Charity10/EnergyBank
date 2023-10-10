@@ -1,47 +1,141 @@
 
-.Heroimage{
+.hero-img{
   width: 100%;
-  height: auto;
+  height: calc(100vh - 20px);
 }
 
 .slider {
-  position: relative;
+
+}
+
+.left-arrow{
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  margin: 10px;
+  color: #070707;
+  font-size: 25px;
+  background: #fefcfc;
+  left: 10px;
+}
+
+
+.right-arrow {
+  position: absolute;
+  background-color: #fffefe;
+  top: 50%;
+  z-index: 10;
+  margin: 10px;
+  color: #080808;
+  height: 1.5em;
+  width: 1.5em;
+  right: 10px;
+}
+
+.slide .active{
+
+}
+
+.slide{
+ 
 }
 
 .herotext{
   position: absolute;
-  top: 25%;
-  left: 6%;
   color: #fff;
-  font-size: 40px;
-  font-weight: bold;
+  top: 55%;
+  left: 6%;
+  font-size: 25px;
   padding: 10px;
-  width: 250px;
-  margin: 10px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+  font-weight: bold;
+  margin: 15px;
+  background: #00000053;
 }
 
 .subtext{
   position: absolute;
-  top: 25%;
-  left: 30%;
-  color: #fff;
+  top: 68%;
+  left: 7%;
+  color: #ffffff;
   font-size: 20px;
   padding: 10px;
-  width: 200px;
+  width: 40%;
+  background: #00000053;
+
   
 }
 
-.aboutUs{
+.container-dots{
+  width: 70px;
+  color: #000;
   position: absolute;
-  top: 54%;
-  left: 10%;
-  color: #fff;
-  font-size: 20px;
-  padding: 10px;
-  width: 150px;
-  background: #fff;
-  color: #10ff;
+  border-radius: 100%;
+  height: 100vh;
+}
+.dot{
+  background: #000;
 }
 
+
+@media screen and (max-width: 1279px) {
+
+.herotext{
+  top: 52%;
+  left: 6%;
+  font-size: 2.5rem;
+  background: #00000053;
+}
+
+.subtext{
+  top: 68%;
+  left: 7%;
+  color: #ffffff;
+  font-size: 1.3rem;
+  width: 80%;
+  background: #00000053;
+  
+}
+
+}
+
+@media screen and (max-width: 768px) {
+  .herotext{
+    top: 55%;
+    left: 6%;
+    font-size: 1.5rem;
+    background: #00000053;
+  }
+  
+  .subtext{
+    top: 68%;
+    left: 7%;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .herotext{
+    top: 55%;
+    /* left: 6%; */
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    /* width: auto; */
+    margin: 20px auto;
+    text-align: center;
+    background: #00000053;
+  }
+  
+  .subtext{
+    top: 68%;
+    left: 5%;
+    font-size: 0.8rem;
+    padding: 5px;
+    background: #00000053;
+    
+  }
+}

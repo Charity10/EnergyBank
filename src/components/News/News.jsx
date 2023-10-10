@@ -11,19 +11,24 @@ const NewsFeed = () => {
 
     axios.get(apiUrl)
       .then(response => {
-        setNews(response.data.articles);
+       setNews(response.data.articles.slice(1,9));
+       console.log(response.data.articles.slice(1,9));
       })
+      
       .catch(error => {
         console.error('Error fetching news:', error);
       });
   }, []);
 
+
   return (
-    <div className='newsContainer'>
+    <div className='newsFeed'>
       <h1>Today in Energy</h1>
-          <ul className='newsList'>
+      <div className="news-Container">
+      <ul className='newsList'>
         {news.map((article, index) => (
           <li className='listItems' key={index}>
+            <img className='news-img' src={article.img} />
             <h2 className='news-title'>{article.title}</h2>
             <p className='news-description'>{article.description}</p>
             <a className='news-url' href={article.url} target="_blank" rel="noopener noreferrer">
@@ -32,6 +37,7 @@ const NewsFeed = () => {
           </li>
         ))}
       </ul>
+      </div>
       </div>
     
     
