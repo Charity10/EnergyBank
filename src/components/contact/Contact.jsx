@@ -14,14 +14,14 @@ export const Contact = () => {
           <p>Contact us</p>
           <p>Privacy policy</p>
         </div>
-        <div className="sevices">
+        <div className="services">
            <h3 className='contact-title'>Our services</h3>
            <p>Electricity</p>
            <p>Petroleum</p>
            <p>Gas</p>
         </div>
         
-        <div className="social Media">
+        <div className="social-media">
           <h3 className='contact-title'> Social media </h3>
              <p>Instagram</p>
              <p>Twitter</p>
@@ -32,7 +32,7 @@ export const Contact = () => {
 
        
         </footer>
-        <div className='design'>©Designed & built by Mercy Umoh</div>
+        <div className='design'>©August body Limited, 08061399185 ~ Designed & built by Mercy Umoh</div>
        </div>
        )
 }

@@ -7,8 +7,8 @@
 
 
 .navbar{
-    background: aliceblue;
-    padding: 10px 20px;
+    background:#fff;
+    padding: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,7 +20,6 @@
 }
 
 .home-link{
-    background-color: aliceblue;
     padding: 10px 20px;
     /* display: flex; */
 
@@ -43,6 +42,7 @@
 
 .navlink {
     color: #000;
+
 }
 
 @media screen and (max-width: 1279px)  {
@@ -67,9 +67,6 @@
         display: flex;
         color: black;
         font-size: 2rem;
-        
-        
-    
     }
     
     .about-link {
@@ -85,6 +82,22 @@
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .navlink {
+        font-size: 1.2rem;
+    }
+
+    .logo{
+        font-size: 2rem;
+    }
+}
+/* 
+default: my laptop and above
+1024px
+768px
+650px
+480px
+ */
 @media screen and (max-width: 780px) {
     .hamburger {
         display: block;

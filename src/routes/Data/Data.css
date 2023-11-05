@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+.data-section {
+    display: flex;
+    padding: 80px;
+    margin: 0 auto;
+    gap: 20px;
+    height: 120vh
+}
+
+.data-nav{
+    background: #020c7e;
+    width: 25%;
+    color: white;
+   
+}
+.info{
+    border: 0.5px solid rgb(175, 175, 207) ;
+    width: 80%;
+    padding: 20px;
+    height: 100%;
+}
+
+.content{
+    text-align: center;
+    padding: 10px;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-size: 1.5rem;
+}
+
+.energy-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.energy-list li {
+    margin: 20px auto;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.data-active{
+    background: white;
+    color: #020c7e;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+p{
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+div.electricity-container, div.gas-info, div.petroleum{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.data-heading{
+    color: #0e0494;
+}

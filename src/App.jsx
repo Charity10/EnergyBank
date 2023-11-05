@@ -2,7 +2,7 @@ import Home from './routes/Home/Home';
 import { Route, Routes } from 'react-router-dom';
 import { About } from './components/About/About';
 import Navbar from './components/Navbar/Navbar';
-import { Data } from './components/Data/Data';
+import { Data } from './routes/Data/Data'
 import { Training } from './routes/Training/Training';
 
 

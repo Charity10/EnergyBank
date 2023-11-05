@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './News.css';
 import axios from 'axios';
 
@@ -22,15 +22,15 @@ const NewsFeed = () => {
 
 
   return (
-    <div className='newsFeed'>
-      <h1>Today in Energy</h1>
+    <>
+      <h1 className='newsHeader'>Today in Energy</h1>
       <div className="news-Container">
       <ul className='newsList'>
         {news.map((article, index) => (
           <li className='listItems' key={index}>
             <img className='news-img' src={article.img} />
             <h2 className='news-title'>{article.title}</h2>
-            <p className='news-description'>{article.description}</p>
+            <p className='news-description'>{article.description.slice(0,150)}...</p>
             <a className='news-url' href={article.url} target="_blank" rel="noopener noreferrer">
               Read more
             </a>
@@ -38,7 +38,7 @@ const NewsFeed = () => {
         ))}
       </ul>
       </div>
-      </div>
+      </>
     
     
   );

@@ -8,14 +8,14 @@ export const ImageData =[
         subTitle: 
            'Energy data bank serving as repository of information and statistics of energy production, consumption, reserves, and other relevant factors.'
     },
-    {
-        images:
-        'https://images.unsplash.com/photo-1548613053-22087dd8edb8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGVuZXJneXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60',
-        title:
-        'Information on Energy Production',
-        subTitle:
-        'Providing insights into the quantity and sources of energy produced within Nigeria.'
-    },
+    // {
+    //     images:
+    //     'https://images.unsplash.com/photo-1548613053-22087dd8edb8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGVuZXJneXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60',
+    //     title:
+    //     'Information on Energy Production',
+    //     subTitle:
+    //     'Providing insights into the quantity and sources of energy produced within Nigeria.'
+    // },
     {
         images: 
         'https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZW5lcmd5fGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60',

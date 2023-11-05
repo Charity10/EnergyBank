@@ -1,12 +1,18 @@
+.slider {
+  position: relative;
+  width: 100%;
+  /* height: calc(100vh - 20px); */
+
+}
+
 
 .hero-img{
   width: 100%;
-  height: calc(100vh - 20px);
+  height: 100%;
+  object-fit: cover;
 }
 
-.slider {
 
-}
 
 .left-arrow{
   position: absolute;
@@ -30,14 +36,6 @@
   height: 1.5em;
   width: 1.5em;
   right: 10px;
-}
-
-.slide .active{
-
-}
-
-.slide{
- 
 }
 
 .herotext{

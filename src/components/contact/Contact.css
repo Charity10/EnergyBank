@@ -10,15 +10,16 @@
 .contact-section {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  
+  align-items: flex-start;
   margin: 10em;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-p{
+div.edbn, div.services, div.social-media{
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px; 
 }
 
 .design{
