@@ -28,3 +28,22 @@ div.edbn, div.services, div.social-media{
   font-size: 0.8rem;
   padding: 8px;
 }
+
+@media screen and (max-width: 1024px){
+
+  .contact-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 10em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  div.edbn, div.services, div.social-media{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    
+  }
+}
